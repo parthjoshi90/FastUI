@@ -319,6 +319,7 @@ export interface FormFieldInput {
   htmlType?: 'text' | 'date' | 'datetime-local' | 'time' | 'email' | 'url' | 'number' | 'password' | 'hidden'
   initial?: string | number
   placeholder?: string
+  autocomplete?: string
   type: 'FormFieldInput'
 }
 export interface FormFieldBoolean {
@@ -361,6 +362,7 @@ export interface FormFieldSelect {
   initial?: string
   vanilla?: boolean
   placeholder?: string
+  autocomplete?: string
   type: 'FormFieldSelect'
 }
 export interface SelectOption {
@@ -385,6 +387,7 @@ export interface FormFieldSelectSearch {
   initial?: SelectOption
   debounce?: number
   placeholder?: string
+  autocomplete?: string
   type: 'FormFieldSelectSearch'
 }
 export interface ModelForm {

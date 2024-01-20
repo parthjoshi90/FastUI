@@ -31,6 +31,7 @@ class FormFieldInput(BaseFormField):
     html_type: InputHtmlType = pydantic.Field(default='text', serialization_alias='htmlType')
     initial: _t.Union[str, float, None] = None
     placeholder: _t.Union[str, None] = None
+    autocomplete: _t.Union[str, None] = None
     type: _t.Literal['FormFieldInput'] = 'FormFieldInput'
 
 
@@ -52,6 +53,7 @@ class FormFieldSelect(BaseFormField):
     initial: _t.Union[str, None] = None
     vanilla: _t.Union[bool, None] = None
     placeholder: _t.Union[str, None] = None
+    autocomplete: _t.Union[str, None] = None
     type: _t.Literal['FormFieldSelect'] = 'FormFieldSelect'
 
 
@@ -62,6 +64,7 @@ class FormFieldSelectSearch(BaseFormField):
     # time in ms to debounce requests by, defaults to 300ms
     debounce: _t.Union[int, None] = None
     placeholder: _t.Union[str, None] = None
+    autocomplete: _t.Union[str, None] = None
     type: _t.Literal['FormFieldSelectSearch'] = 'FormFieldSelectSearch'
 
 

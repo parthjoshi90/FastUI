@@ -186,6 +186,7 @@ def json_schema_field_to_field(
             required=required,
             initial=schema.get('default'),
             description=schema.get('description'),
+            autocomplete = schema.get('autocomplete'),
         )
 
 
